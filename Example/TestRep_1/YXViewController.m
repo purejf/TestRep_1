@@ -7,6 +7,7 @@
 //
 
 #import "YXViewController.h"
+#import "YXTimerHelper.h"
 
 @interface YXViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [YXTimerHelper run];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
