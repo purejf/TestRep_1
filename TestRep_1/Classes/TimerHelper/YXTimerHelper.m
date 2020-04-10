@@ -13,4 +13,8 @@
     NSLog(@"run");
 }
 
++ (void)jump {
+    NSLog(@"jump");
+}
+
 @end

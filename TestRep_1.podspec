@@ -7,36 +7,19 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'TestRep_1'
-  s.version          = '0.0.1'
-  s.summary          = 'A short description of TestRep_1.'
+s.name             = 'TestRep_1'
+s.version          = '0.0.2'
+s.summary          = 'TestRep_1'
+s.description      = "TestRep_1远程仓库"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.homepage         = 'https://github.com/purejf/TestRep_1'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'purejf@163.com' => 'yaoxin@sunlands.com' }
+s.source           = { :git => 'https://github.com/purejf/TestRep_1.git', :tag => s.version.to_s }
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.ios.deployment_target = '9.0'
 
-  s.homepage         = 'https://github.com/purejf@163.com/TestRep_1'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'purejf@163.com' => 'yaoxin@sunlands.com' }
-  s.source           = { :git => 'https://github.com/purejf@163.com/TestRep_1.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.source_files = 'TestRep_1/Classes/**/*'
+s.requires_arc = true
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'TestRep_1/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'TestRep_1' => ['TestRep_1/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
